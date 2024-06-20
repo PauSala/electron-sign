@@ -33,8 +33,8 @@ jobs:
         run: |
           echo  "$CSC_KEY_PASSWORD and $CSC_LINK"
         env:
-          CSC_KEY_PASSWORD: ${{ secrets.pass }}
-          CSC_LINK: ${{ secrets.encoded }}
+          CSC_KEY_PASSWORD: ${{ secrets.P12_PASS }}
+          CSC_LINK: ${{ secrets.P12_ENCODED }}
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
       - uses: actions/setup-node@v4
